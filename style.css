@@ -264,11 +264,11 @@ nav {
 
 .event-spring img {
     object-fit: contain;
-    object-position: center;
+    object-position: center 70%;
 }
 
 .event-bikes {
-    align-items: flex-start;
+    align-items: center;
 }
 
 .event-bikes img {
@@ -281,8 +281,9 @@ nav {
 .event-damascus img {
     object-fit: cover;
     object-position: center 80%;
-    width: 65px;
+    width: 75px;
     height: 52px;
+    margin-top: 20px;
 }
 
 .event-info {
@@ -323,7 +324,6 @@ nav {
 }
 
 footer {
-    border-top: 2px solid #ede0d4;
     text-align: center;
     padding: 24px 32px;
     font-size: 13px;
@@ -333,4 +333,14 @@ footer {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 32px;
+    right: 32px;
+    border-top: 2px solid #ede0d4;
 }
